@@ -12,35 +12,44 @@
 </head>
 <body>
    <header class="header">
-        <div class="header__container">
+        <div class="container">
             <a href="#" class="header__logo">
                 <svg width="70" height="56">
                     <use href="./images/sprite.svg#icon-logo"></use>
                 </svg>
             </a>
-            <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="#">О нас</a></li>
-                    <li class="header__nav-item"><a href="#">Услуги и цены</a></li>
-                    <li class="header__nav-item"><a href="#">Мастера</a></li>
-                    <li class="header__nav-item"><a href="#">Контакты</a></li>
+            <button type="button" class="header__menu--open-button" aria-expanded="false" aria-controls="menu-container"
+                data-menu-button aria-label="Open menu">
+                <svg width="40" height="40">
+                    <use href="./images/sprite.svg#icon-header-menu-open" class="icon-menu"></use>
+                    <use href="./images/sprite.svg#icon-header-menu-close" class="icon-cross"></use>
+                </svg>
+            </button>
+            <div class="header__menu" data-menu>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#" aria-label="about us">О нас</a></li>
+                        <li class="header__nav-item"><a href="#" aria-label="price">Услуги и цены</a></li>
+                        <li class="header__nav-item"><a href="#" aria-label="masters">Мастера</a></li>
+                        <li class="header__nav-item"><a href="#" aria-label="contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__call">
+                    <a href="tel:+380441111111">+38 044 111 11 11</a>
+                        <button type="button" aria-label="записаться в салон" class="button light">онлайн-запись</button>
+                </div>
+                <ul class="header__social-list">
+                    <li class="header__social-list--item"><a href="#">Instagram</a></li>
+                    <li class="header__social-list--item"><a href="#">Youtube</a></li>
                 </ul>
-            </nav>
-            <div class="header__call">
-                <a href="tel:+380441111111">+38 044 111 11 11</a>
-                    <button type="button">онлайн-запись</button>
             </div>
-            <ul class="header__social-list">
-                <li class="header__social-list--item"><a href="#">Instagram</a></li>
-                <li class="header__social-list--item"><a href="#">Youtube</a></li>
-            </ul>
         </div>
    </header>
    <main>
 
        <section class="hero">
-           <div class="hero__container">
-               <h2 class="hero__subtitle">A hair salon for men in Kyiv</h2>
+           <div class="container">
+               <h3 class="hero__subtitle">A hair salon for men in Kyiv</h3>
                <h1 class="hero__title">BarberShop</h1>
                <p class="hero__text">Мы эксперты в модных мужских стрижках. 
                    Работаем быстро, осторожно и со вкусом.</p>
@@ -48,7 +57,7 @@
        </section>
 
        <section class="description">
-           <div class="description__container">
+           <div class="container">
                <h3 class="description__subtitle-top">О НАС</h3>
                <h2 class="description__title">Лучший Барбершоп твоего города</h2>
                <h4 class="description__undertitle">Если ты хочешь добавить в свой 
@@ -58,11 +67,11 @@
                     Мы команда, которая всегда с клиентами "на одной волне".
                     Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
            </div>
-           <button type="button" class="description__button">онлайн-запись</button>
+           <button type="button" class="button dark">онлайн-запись</button>
        </section>
 
        <section class="price">
-           <div class="price__container">
+           <div class="container">
                <h3 class="price__subtitle">Проведи время в компании лучших мастеров</h3>
                <h2 class="price__title">Услуги и цены</h2>
                <ul class="price__list">
@@ -91,12 +100,12 @@
                     <span class="price__item-cost">от 200 грн.</span></li>
 
                </ul>
-               <button type="button">онлайн-запись</button>
+               <button type="button" class="button light">онлайн-запись</button>
            </div>
        </section>
 
        <section class="features">
-           <div class="features__container">
+           <div class="container">
                <h3 class="features__subtitle">старая традиционная школа</h3>
                <h2 class="features__title">Почему приходят именно к нам?</h2>
                <p class="features__text">О нас говорят только хорошее. Но лучше 
@@ -111,7 +120,7 @@
        </section>
 
        <section class="masters">
-           <div class="masters__container">
+           <div class="container">
                <h3 class="masters__subtitle">для настоящих ценителей атмосферы</h3>
                <h2 class="masters__title">Наши мастера</h2>
                <ul class="masters__list">
@@ -212,7 +221,7 @@
        </section>
 
        <section class="portfolio">
-           <div class="portfolio__container">
+           <div class="container">
                <h2 class="portfolio__title">На латинском языке “барба” означает “борода”</h2>
                <ul class="portfolio__list">
                    <li class="portfolio__item">
@@ -232,7 +241,7 @@
        </section>
 
        <footer class="footer">
-           <div class="footer__container">
+           <div class="container">
                <div class="footer__form">
                    <h2 class="footer__title">Онлайн-запись</h2>
                    <form>
@@ -260,5 +269,6 @@
 
        </footer>
    </main>
+   <script src="./js/menu.js"></script>
 </body>
 </html>
