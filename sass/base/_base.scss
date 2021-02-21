@@ -43,6 +43,7 @@ ul {
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 .button- {
@@ -78,6 +79,9 @@ img {
 }
 
 h1 {
+    margin: 0;
+    padding: 0;
+    
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -89,6 +93,9 @@ h1 {
 }
 
 h2 {
+    margin: 0;
+    padding: 0;
+
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
@@ -100,6 +107,9 @@ h2 {
 }
 
 h3 {
+    margin: 0;
+    padding: 0;
+
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -114,6 +124,9 @@ h3 {
 }
 
 h4 {
+    margin: 0;
+    padding: 0;
+
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -124,6 +137,20 @@ h4 {
     color: #555555;
 }
 
+h5 {
+    margin: 0;
+    padding: 0;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    letter-spacing: 0.02em;
+
+    color: #FF6C00;
+}
 
 p {
     font-family: Open Sans;
@@ -135,3 +162,4 @@ p {
 
     color: #555555;
 }
+
